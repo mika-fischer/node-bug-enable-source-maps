@@ -1,7 +1,7 @@
 # V8 stack traces of static method calls are somewhat broken (receiver has incorrect name)
 
 - NodeJS issue: https://github.com/nodejs/node/issues/55236
-- V8 issue: 
+- V8 issue: https://issues.chromium.org/issues/371019881
 
 ## Description of the bug
 
