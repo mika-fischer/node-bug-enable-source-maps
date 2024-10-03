@@ -1,17 +1,24 @@
 Error.stackTraceLimit = 1;
 
 class JSClass {
-  static async foo() {
+  static foo() {
     throw new Error();
   }
 }
 
 function JSProto() {}
-JSProto.foo = async function foo() {
+JSProto.foo = function foo() {
   throw new Error();
 };
 
-await JSClass.foo().catch(console.error);
-await(JSProto as any)
-  .foo()
-  .catch(console.error);
+try {
+  JSClass.foo();
+} catch (err) {
+  console.error(err);
+}
+
+try {
+  JSProto.foo();
+} catch (err) {
+  console.error(err);
+}
