@@ -2,6 +2,7 @@
 
 - NodeJS issue: https://github.com/nodejs/node/issues/55236
 - V8 issue: https://issues.chromium.org/issues/371019881
+- V8 CL: https://chromium-review.googlesource.com/c/v8/v8/+/5907815
 
 ## Description of the bug
 
